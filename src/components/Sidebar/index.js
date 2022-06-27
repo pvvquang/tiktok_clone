@@ -1,5 +1,10 @@
+import { styleImport } from "~/utils";
+import styles from "./Sidebar.module.scss";
+
+const cx = styleImport(styles);
+
 function Sidebar() {
-  return <h2>Sidebar</h2>;
+  return <aside className={cx("wrapper")}>Sidebar</aside>;
 }
 
 export default Sidebar;

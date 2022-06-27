@@ -3,10 +3,34 @@
 
 :root {
   --primary: #fe2c55;
+  --color-grey-dc: #dcdcdc;
+  --color-grey-3: #333;
+  --color-grey-6: #666;
+  --color-grey-9: #999;
+  --color-white: white;
+  --color-black: black;
+
+  //Default
+  --default-layout-header-height: 60px;
+  --default-layout-max-width: 1150px;
+  --default-layout-width: 75%;
+  --default-sidebar-width: 340px;
+
+  //search
+  --search-border-radius: 92px;
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+button,
+input,
+textarea {
+  border: none;
+  outline: none;
 }
 
 html {
@@ -18,4 +42,10 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
+}
+
+@mixin d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
